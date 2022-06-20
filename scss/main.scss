@@ -1,0 +1,28 @@
+
+@import "_var.scss";
+
+//$tablet: 725px;
+$media-tablet: "only screen and (max-width : 725px)";
+//$mobile: 540px;
+$media-mobile: "only screen and (max-width : 540px)";
+
+
+body{
+   font-family: 'Overpass', sans-serif;
+   font-size: 13px;
+   min-height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
