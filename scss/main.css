@@ -34,7 +34,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #222222;
+  background-color: #000;
   min-height: 100vh;
 }
 
@@ -53,7 +53,8 @@ body {
   border-radius: 20px;
   width: 400px;
   padding: 25px;
-  background-color: var(--Very-Dark-Blue);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--Dark-Blue)), to(var(--Very-Dark-Blue)));
+  background-image: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
 }
 
 .main-container .star-icon-container {
@@ -168,6 +169,65 @@ body {
 .main-container .selected {
   background-color: var(--Light-Grey) !important;
   color: white !important;
+}
+
+.main-container .thankyou-container {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  height: 398.100px;
+}
+
+.main-container .thankyou-container .header-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.main-container .thankyou-container .header-container img {
+  margin-bottom: 25px;
+}
+
+.main-container .thankyou-container .header-container .rating-output-container {
+  text-align: center;
+  color: var(--Orange);
+  border-radius: 25px;
+  background-color: var(--Dark-Blue);
+  padding: 8px;
+  width: 200px;
+  margin: auto;
+}
+
+.main-container .thankyou-container .thank-you-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+}
+
+.main-container .thankyou-container .thank-you-content-wrapper h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.main-container .thankyou-container .thank-you-content-wrapper p {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--Light-Grey);
 }
 
 .attribution {

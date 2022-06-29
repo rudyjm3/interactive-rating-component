@@ -15,7 +15,8 @@ body{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: rgb(34, 34, 34);
+   // background-color: hsl(228, 20%, 7%);
+   background-color: #000;
    min-height: 100vh;
 }
 
@@ -27,8 +28,9 @@ body{
    border-radius: 20px;
    width: 400px;
    padding: 25px;
-   // background: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
-   background-color: var(--Very-Dark-Blue);
+   // background-image: linear-gradient(to bottom, hsl(225, 30%, 17%), hsl(215, 42%, 11%));
+   background-image: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
+   // background-color: var(--Very-Dark-Blue);
 
    .star-icon-container{
       width: 100%;
@@ -112,6 +114,93 @@ body{
       background-color: var(--Light-Grey)!important; 
       color: white !important;
    }
+   // Thank You Styling //
+.thankyou-container{
+   // base styling comes from main-container. css class added to this container as well
+   position: absolute;
+   z-index: 10;
+   opacity: 0;
+   transform: scale(0);
+   transition: all 0.5s ease-in-out;
+   height: 398.100px;
+   .header-container{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+      img{
+         margin-bottom: 25px;
+      }
+      .rating-output-container{
+         text-align: center;
+         color: var(--Orange);
+         border-radius: 25px;
+         background-color: var(--Dark-Blue);
+         padding: 8px;
+         width: 200px;
+         margin: auto;
+      }
+   }
+   .thank-you-content-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      color: white;
+      h1{
+         width: 100%;
+         text-align: center;
+         margin-bottom: 15px;;
+      }
+      p{
+         width: 100%;
+         text-align: center;
+         line-height: 1.5;
+         color: var(--Light-Grey);
+      }
+   }
+}
+
+// // Thank You Styling //
+// .thankyou-container{
+//    // base styling comes from main-container. css class added to this container as well
+//    position: absolute;
+//    top: 0;
+//    height: 398.100px;
+//    .header-container{
+//       width: 100%;
+//       text-align: center;
+//       margin-bottom: 15px;
+//       img{
+//          margin-bottom: 25px;
+//       }
+//       .rating-output-container{
+//          text-align: center;
+//          color: var(--Orange);
+//          border-radius: 25px;
+//          background-color: var(--Dark-Blue);
+//          padding: 8px;
+//          width: 200px;
+//          margin: auto;
+//       }
+//    }
+//    .thank-you-content-wrapper{
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-wrap: wrap;
+//       color: white;
+//       h1{
+//          width: 100%;
+//          text-align: center;
+//          margin-bottom: 15px;;
+//       }
+//       p{
+//          width: 100%;
+//          text-align: center;
+//          line-height: 1.5;
+//          color: var(--Light-Grey);
+//       }
+//    }
 
 }
 
