@@ -10,13 +10,14 @@
 //       });
 //    };
 let outPut = document.getElementsByClassName('rating-output-container')[0];
-let rating = document.getElementsByClassName('rating-container')[0].children;
+let rating = document.getElementsByClassName('rating-container')[0].children; //targets all the child div/elements inside the parent div
 
+// Function ran when any number rating is clicked
 function ratingSelection(ele) {  
-   for(var i = 0; i < rating.length; i++) {
-      console.log(rating);
-      //console.log(rating[i]);
-      rating[i].classList.remove('selected');
+   for(var i = 0; i < rating.length; i++) { //Loops through all divs inside rating-container
+      // console.log(rating);
+      console.log(rating[i]);
+      rating[i].classList.remove('selected');//If any div has class name 'selected' remove it
    } 
    ele.classList.add('selected');
    starRatingSelected = ele.innerHTML;
