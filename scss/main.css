@@ -57,6 +57,12 @@ body {
   background-image: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
 }
 
+@media only screen and (max-width: 540px) {
+  .main-container {
+    width: 85%;
+  }
+}
+
 .main-container .star-icon-container {
   width: 100%;
   display: -webkit-box;
@@ -271,11 +277,11 @@ body {
 }
 
 .attribution {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
+  position: absolute;
+  bottom: 20px;
   font-size: 11px;
   text-align: center;
+  color: var(--Medium-Grey);
 }
 
 .attribution a {
