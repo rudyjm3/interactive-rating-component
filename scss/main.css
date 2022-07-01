@@ -88,18 +88,18 @@ body {
   color: var(--Orange);
 }
 
-.main-container .text-content {
+.main-container .main-content {
   width: 100%;
   margin-bottom: 25px;
 }
 
-.main-container .text-content h1 {
+.main-container .main-content h1 {
   font-size: 25px;
   color: white;
   margin-bottom: 15px;
 }
 
-.main-container .text-content p {
+.main-container .main-content p {
   color: var(--Light-Grey);
   line-height: 1.5;
 }

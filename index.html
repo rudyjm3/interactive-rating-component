@@ -13,15 +13,14 @@
 
 
 
-   <div class="main-container">
-      <div class="star-icon-container">
-         <img src="/images/icon-star.svg" alt="" srcset="">
-         <!-- <div id="star-rating"></div> -->
-      </div>
-      <div class="text-content">
-         <h1>How did we do?</h1>
+   <div class="main-container" role="main">
+      <header class="star-icon-container" role="banner">
+         <img src="/images/icon-star.svg" alt="orange star icon">
+      </header>
+      <main class="main-content">
+         <h1 role="title">How did we do?</h1>
          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      </div>
+      </main>
       <div class="rating-container">
          <div class="rating-num-1 rating-num" onclick="ratingSelection(this)">1</div>
          <div class="rating-num-2 rating-num " onclick="ratingSelection(this)">2</div>
@@ -39,28 +38,26 @@
          <div class="count-wrapper">
             <span class="counter-text">Returning in: </span> </span><span id="countDwn"></span>
          </div>
-         <div class="header-container">
-            <img src="/images/illustration-thank-you.svg" alt="" srcset="">
-            <div class="rating-output-container">
-               
-            </div>
-         </div>
+         <header class="header-container">
+            <img src="/images/illustration-thank-you.svg" alt="picture of phone with credit card circling around">
+            <div class="rating-output-container"></div>
+         </header>
          
-         <div class="thank-you-content-wrapper">
+         <main class="thank-you-content-wrapper">
             <h1>Thank you!</h1>
             <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-         </div>
+         </main>
       </div>
       <!--  BREAK: END THANK YOU CONTAINER -->
       
    </div>
   
-  <div class="attribution">
+  <div class="attribution" role="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="http://rudolphmims.com" target="_blank">Rudolph Mims</a>.
   </div>
 
-  
+
   <script src="/js/main.js"></script>
 </body>
 </html>
