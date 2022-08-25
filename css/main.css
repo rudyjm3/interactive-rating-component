@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -13,123 +12,78 @@
   --Medium-Grey: hsl(216, 12%, 54%);
   --Dark-Blue: hsl(213, 19%, 18%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
 }
 
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #000;
   min-height: 100vh;
 }
 
 .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   width: 400px;
   padding: 25px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--Dark-Blue)), to(var(--Very-Dark-Blue)));
   background-image: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
 }
-
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width : 540px) {
   .main-container {
     width: 85%;
   }
 }
-
 .main-container .star-icon-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 25px;
 }
-
 .main-container .star-icon-container img {
   padding: 15px;
   background-color: var(--Dark-Blue);
   border-radius: 50px;
   margin-right: 15px;
 }
-
 .main-container .star-icon-container #star-rating {
   color: var(--Orange);
 }
-
 .main-container .main-content {
   width: 100%;
   margin-bottom: 25px;
 }
-
 .main-container .main-content h1 {
   font-size: 25px;
   color: white;
   margin-bottom: 15px;
 }
-
 .main-container .main-content p {
   color: var(--Light-Grey);
   line-height: 1.5;
 }
-
 .main-container .rating-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 25px;
 }
-
 .main-container .rating-container .rating-num {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding-top: 2px;
   width: 50px;
   height: 50px;
@@ -137,21 +91,17 @@ body {
   background-color: var(--Dark-Blue);
   color: var(--Light-Grey);
   font-weight: 700;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-
 .main-container .rating-container .rating-num:hover {
   background-color: var(--Orange);
   color: white;
 }
-
 .main-container .btn-wrapper {
   width: 100%;
   margin-top: 25px;
 }
-
 .main-container .btn-wrapper button {
   width: 100%;
   background-color: var(--Orange);
@@ -162,82 +112,57 @@ body {
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-
 .main-container .btn-wrapper button:hover {
   background-color: white;
   color: var(--Orange);
 }
-
 .main-container .selected {
   background-color: var(--Light-Grey) !important;
   color: white !important;
 }
-
 .main-container .thankyou-container {
   position: absolute;
   z-index: 10;
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.5s ease-in-out;
+  transform: scale(0);
   transition: all 0.5s ease-in-out;
-  height: 398.100px;
+  height: 398.1px;
 }
-
 .main-container .thankyou-container .count-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   opacity: 0.7;
   width: 100%;
   height: 21.2px;
 }
-
 .main-container .thankyou-container .count-wrapper .counter-text {
   color: var(--Orange);
   font-size: 10px;
   margin-right: 4px;
 }
-
 .main-container .thankyou-container .count-wrapper #countDwn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   font-size: 10px;
   color: var(--Light-Grey);
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .main-container .thankyou-container .header-container {
   width: 100%;
   text-align: center;
   margin-bottom: 15px;
 }
-
 .main-container .thankyou-container .header-container img {
   margin-bottom: 25px;
 }
-
 .main-container .thankyou-container .header-container .rating-output-container {
   text-align: center;
   color: var(--Orange);
@@ -247,28 +172,18 @@ body {
   width: 200px;
   margin: auto;
 }
-
 .main-container .thankyou-container .thank-you-content-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   color: white;
 }
-
 .main-container .thankyou-container .thank-you-content-wrapper h1 {
   width: 100%;
   text-align: center;
   margin-bottom: 15px;
 }
-
 .main-container .thankyou-container .thank-you-content-wrapper p {
   width: 100%;
   text-align: center;
@@ -285,6 +200,5 @@ body {
 }
 
 .attribution a {
-  color: #3e52a3;
-}
-/*# sourceMappingURL=main.css.map */
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
